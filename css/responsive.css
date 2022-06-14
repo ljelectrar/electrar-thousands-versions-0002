@@ -1,0 +1,17 @@
+@media screen and (max-width: 864px)  {
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    padding: 0 2em;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,424 @@
+/* SETUP VARIABLES FONTS */
+/*
+    /* fonts serif
+*/
+
+@font-face {
+  font-size: 'Red Hat Display', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0..1,300..900') format('woff2 supports variations'),
+          url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0..1,300..900') format('woff2-variations');
+  font-weight: 300 900;
+  font-style: 0 1;
+}
+
+/* colors black & white */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-creme: #efdab9;
+  --color-gray-dark: #202124;
+  --color-gray: #3A3632;
+  --color-gray-brains: #27282c;
+  --color-gray-atom: #343233;
+  --color-gray-light: #f4f4f4;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-600: #9E9E9E;
+  --color-gray-800: #616161;
+  --color-gray-900: #424242;
+}
+
+/* Color shadows */
+:root {
+  --color-shadow-black-15: rgba(0, 0, 0, 0.15);
+  --color-shadow-black-30: rgba(0, 0, 0, 0.30);
+  --color-shadow-black-60: rgba(0, 0, 0, 0.60);
+  --color-shadow-black-75: rgba(0, 0, 0, 0.75);
+  --color-shadow-black-90: rgba(0, 0, 0, 0.90);
+  --color-shadow-black-95: rgba(0, 0, 0, 0.95);
+  --color-shadow-white-15: rgba(255, 255, 255, 0.15);
+  --color-shadow-white-30: rgba(255, 255, 255, 0.30);
+  --color-shadow-white-60: rgba(255, 255, 255, 0.60);
+  --color-shadow-white-75: rgba(255, 255, 255, 0.75);
+  --color-shadow-white-90: rgba(255, 255, 255, 0.90);
+  --color-shadow-white-95: rgba(255, 255, 255, 0.95);
+}
+
+/* Branding colors */
+:root {
+  /* magenta group */
+  --color-magenta: #ff09f5;
+  --color-middle-magenta: #bc0350;
+  --color-main-magenta: #bc0350;
+  --color-dark-magenta: #2b0013;
+  /* blue group */
+  --color-indigo: #0d1623;
+  --color-dark-blue: #220055;
+  --color-middle-blue: #442178;
+  --color-light-blue: #8d5fd3;
+  /* Green Group */
+  --color-light-green: #40ff6f;
+  --color-green: #28a745;
+  --color-dark-green: #18672a;
+  /* Red Group */
+  --color-light-red: #ff4b4b;
+  --color-red: #ff0000;
+  --color-main-red: #e52421;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  letter-spacing: .1em;
+  font-weight: 400;
+  width: 100%;
+}
+
+body {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+a, li, ul
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 800;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas,
+caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption,
+figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label,
+legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span,
+strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: initial;
+  color: inherit;
+  list-style-type: none !important;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 6em;
+}
+
+h3 {
+  font-size: 5em;
+}
+
+h4 {
+  font-size: 4em;
+}
+
+h5 {
+  font-size: 3em;
+}
+
+h6 {
+  font-size: 2em;
+}
+
+p {
+  line-height: 1.6em;
+  font-size: 1.4em;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.electrar_layout {
+  color: var(--color-gray);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+}
+
+header, main, footer {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 10000 !important;
+  background-color: transparent;
+  padding: 0 2em;
+}
+
+.header_logo {
+  padding-top: .65em;
+  z-index: 10000111;
+}
+
+.header_logo img {
+  height: 127px;
+  image-resolution: snap;
+}
+
+.nav_revel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+.nav_revel ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nav_revel ul li {
+  padding: .5em .4em .8em .5em;
+  border-radius: 16px;
+  margin: 0 .75em;
+  color: var(--color-white);
+  background-color: var(--color-main-magenta);
+  border: 1px solid var(--color-main-magenta);
+}
+
+.nav_revel ul li:nth-child(2)::after {
+  content: "➜";
+  margin: 0 .2em 1em .7em;
+}
+
+.nav_revel ul li:first-child {
+  background-color: var(--color-white);
+  color: var(--color-main-magenta);
+}
+
+.nav_revel ul li:last-child {
+  border: none !important;
+  background-color: var(--color-white);
+  color: var(--color-main-magenta);
+}
+
+.nav_revel ul li:last-child::before {
+  content: "♦";
+  font-size: 1.4em;
+  margin-right: .2em;
+}
+
+.nav_revel ul li a {
+  color: var(--color-main-magenta)
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* MAIN */
+
+main {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  z-index: 100;
+}
+
+.main_section {
+  width: 100%;
+  height: 100%;
+  padding: 7% 9%;
+  height: 94vh;
+}
+
+/* SLIDER STYLES */
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-img img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.slide-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-shadow-white-75);
+  z-index: 2;
+}
+
+.slide-text {
+  position: relative;
+  padding: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  text-align: center;
+}
+
+.slide-text small {
+  color: var(--color-main-red);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.slide-text h2 {
+  margin: .1em 0;
+  color: var(--color-middle-blue);
+  font-weight: 700;
+}
+
+.slide-text p {
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 1.7;
+}
+
+.slide-buttons {
+  display: none;
+}
+/* FOOTER */
+
+footer {
+  display: flex;
+  width: 100%;
+  color: var(--color-gray-dark);
+}
+
+.footer_legal {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em;
+  padding: .6em 1em;
+  width: 100%;
+}
+
+.footer_legal img {
+  max-width: 2.25em;
+}
+
+.footer_legal ul {
+  flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer_legal ul li {
+  margin: 0 .75em;
+  font-weight: 400;
+  border-right: 1px solid var(--color-gray-300);
+}
+
+.footer_legal ul li:first-child, .footer_legal ul li:last-child {
+  border-right: none;
+}
+
+.footer_legal p {
+  font-size: 1em;
+  font-weight: 400;
+  width: 620px;
+  flex-wrap: nowrap;
+  word-wrap: normal;
+  word-break: normal;
+  display: flex;
+  align-items: center;
+  margin: 0 .4em;
+}
+
+.footer_legal p img {
+  width: 21px;
+  margin: 0 .35em;
+}
+
+.social_media {
+  flex-wrap: nowrap !important;
+  justify-content: center;
+}
+
+.social_media li {
+  padding: 0 !important;
+  margin: 0 .5em !important;
+}
+
+.social_media li a img {
+  width: 21px;
+  border-radius: 50%;
+}

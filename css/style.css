@@ -1,0 +1,255 @@
+.contact_section, .about_section {
+  color: var(--color-gray-600);
+  margin: 1% 18%;
+  width: 44%;
+}
+
+.contact_section {
+  height: 90vh;
+}
+
+.contact_section h5 {
+  margin: .1em 0;
+  margin-top: 1em;
+}
+
+.contact_section h6 {
+  margin: .7em 0;
+}
+
+.contact_section a {
+  color: var(--color-azul-medio);
+}
+
+.contact_section p {
+  margin-bottom: .4em;
+}
+
+/* ABOUT SECTION */
+
+.about_section h4 {
+  font-size: 2.5em;
+  margin-bottom: .1em;
+}
+
+.about_section h5 {
+  font-size: 2em;
+}
+
+.about_section h6 {
+  font-size: 1.5em;
+  margin-bottom: .7em;
+  font-weight: 600;
+}
+
+.about_section figure {
+  margin-bottom: 4em;
+}
+
+.about_section img {
+  max-width: 420px;
+}
+
+.about_section p {
+  font-size: 1.125em;
+  margin-bottom: 1.25em;
+}
+
+/* Book Section */
+.book_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+  width: 100%;
+  background-color: var(--color-gray-100);
+  background-image: url("../img/arts/AlienLogoRight.png");
+  background-size: fill;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.book_section_container {
+  min-width: 1080px;
+  max-width: 1450px;
+  min-height: 720px;
+  max-height: 1080px;
+  padding-top: 2.67%;
+  padding-bottom: 0;
+}
+
+.tab-list {
+  display: flex;
+  width: 100%;
+}
+
+.tab-list li {
+  padding: .2em 1em;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.tab-list li a {
+  color: var(--color-vermelho-cinabrio);
+  font-weight: 800;
+  padding: 3em;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-list li:nth-child(1) {
+  border-top-left-radius: 4px;
+  padding-left: 0;
+  background-color: var(--color-white);
+}
+
+.tab-list li:nth-child(2) {
+  padding-left: 0;
+  background-color: var(--color-gray-200);
+}
+
+.tab-list li:nth-child(3) {
+  padding-left: 0;
+  background-color: var(--color-gray-300);
+  border-top-right-radius: 4px;
+}
+
+.tab-list .active {
+  background-color: blue;
+}
+
+.tab-panel {
+  width: 1080px;
+  min-height: 620px;
+  padding: 2.25%;
+  display: none;
+  border-radius: .4em;
+  border-top-left-radius: 0;
+  color: var(--color-azul-medio-claro);
+}
+
+.tab-panel h1 {
+  font-weight: 800;
+  font-size: 5em;
+}
+
+.book_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 480px;
+}
+
+.book_description figure {
+  width: 25%;
+}
+
+.book_description img {
+  max-height: 380px;
+  box-shadow: -1px 1px 12px 1px var(--color-shadow-black-90);
+}
+
+.book_description figcaption {
+  margin-top: 1em;
+  color: var(--color-gray-dark);
+}
+
+.book_description_txt {
+  color: var(--color-gray-dark);
+  width: 64%;
+  height: 100%;
+}
+
+.book_description_txt p {
+  text-align: justify;
+  font-size: 1.6em;
+}
+
+.book_description_txt small {
+  font-size: .9em;
+}
+
+.book_description_txt figure {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.book_description_txt figure img {
+  box-shadow: 0 0 1px 0px var(--color-shadow-black-90);
+  height: 160px;
+}
+
+.book_description_txt figcaption {
+  font-size: .8em;
+}
+
+.buy_now {
+  color: var(--color-white);
+  font-weight: 800;
+  background-color: var(--color-vermelho);
+  padding: 1% 2% 1.2% 1%;
+  border-radius: 1em;
+  border: 1px solid var(--color-vermelho-cinabrio);
+  font-size: 1.5em;
+}
+.buy_now::after {
+  content: "➜";
+  margin: 0 .2em 1em .7em;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* PHOTO VIEWER */
+
+/* HERE WILL THE CODE FOR PHOTO VISUALIZATION */
+
+/* TECHICAL AND PHYSICAL DATA */
+
+.physical_data {
+  margin: 2em 0;
+}
+
+.physical_data p {
+
+}
+
+.physical_data div {
+  display: flex;
+  margin: 0;
+}
+
+.physical_data ul {
+  margin: 1em 0;
+  margin-right: 3em;
+}
+
+.physical_data small {
+  margin-bottom: 2em;
+  color: var(--color-vermelho);
+}
+
+#tab-1 {
+  background-color: var(--color-white);
+}
+#tab-2 {
+  background-color: var(--color-gray-200);
+}
+
+#tab-3 {
+  background-color: var(--color-gray-300);
+  color: var(--color-black);
+}
+
+#tab-3 p {
+  color: var(--color-vermelho-cinabrio);
+}
+
+
+/* TEACHER STYLES */
+.teacher_section-presetation {
+  min-height: 100vh;
+  width: 100%;
+}
